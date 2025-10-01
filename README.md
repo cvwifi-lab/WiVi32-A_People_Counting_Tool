@@ -164,8 +164,6 @@ The software architecture consists of multiple layers to support data collection
 - Compliance with institutional research ethics guidelines
 - Anonymous data sharing for research purposes only
 
-![Dataset Sample](images/image_sample.png)
-
 ![IP Webcam Setup](images/occlussion.png)
 
 ![IP Webcam Setup](images/IPWebcam.png)
