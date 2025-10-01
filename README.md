@@ -139,7 +139,7 @@ The software architecture consists of multiple layers to support data collection
 | 6 | 6 people | Six people | 1,000 | 200 | 1,200 |
 | 7 | 7 people | Seven people | 1,000 | 200 | 1,200 |
 
-![3D Visualization](images/3d_paper_visualize.png)
+![3D Visualization](images/MultiPerson.png)
 
 ### Data Collection Protocol
 
