@@ -9,7 +9,7 @@ This repository presents a comprehensive Channel State Information (CSI) system 
 This repository includes a comprehensive WiFi CSI dataset for people counting research:
 
 **Dataset Overview:**
-- **9,600 total samples** (8,000 training + 1,600 testing)
+- **8000 total samples** (6400 samples for training, 800 for validation and 800 samples kept for final testing)
 - **8 occupancy levels** (0-7 people: from empty room to 7+ people)
 - **Synchronized CSI + Visual data** (WiFi signals + camera frames for ground truth)
 - **High-quality annotations** with precise people counting and timestamp synchronization
