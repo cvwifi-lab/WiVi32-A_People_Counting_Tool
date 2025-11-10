@@ -25,7 +25,7 @@ This repository includes a comprehensive WiFi CSI dataset for people counting re
 Access to the complete dataset and source code is restricted to academic and research use only. Interested researchers may request access for non-commercial research purposes.
 
 **📧 How to Request Access:**
-1. Click the [Google Drive Repository]([[https://drive.google.com/drive/folders/1_zQK3YueUF6yZZ0mbjFeSwa58R1fDccK]]) link
+1. Click the [Google Drive Repository](https://drive.google.com/drive/folders/1_zQK3YueUF6yZZ0mbjFeSwa58R1fDccK) link
   - `api/` - Flask backend source code
   - `CSIApp/` - React Native mobile application 
   - `data/` - Complete dataset (9,600 samples with CSI + visual data for people counting)
