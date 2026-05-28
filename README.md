@@ -123,7 +123,7 @@ The software architecture consists of multiple layers to support data collection
 
 | Split | Samples | Classes | CSI Files | Images 
 |-------|---------|---------|-----------|--------
-| Train | ~40,000   | 8 (0-7) | 8         | ~40,000   
+| Train | ~48,000   | 8 (0-7) | 8         | ~48,000   
 | Test  | ~12,000   | 8 (0-7) | 8         | ~12,000   
 
 ### Class Distribution & Balance
