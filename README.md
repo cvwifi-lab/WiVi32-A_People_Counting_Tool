@@ -123,21 +123,21 @@ The software architecture consists of multiple layers to support data collection
 
 | Split | Samples | Classes | CSI Files | Images 
 |-------|---------|---------|-----------|--------
-| Train | 8,000   | 8 (0-7) | 8         | 8,000   
-| Test  | 1,600   | 8 (0-7) | 8         | 1,600   
+| Train | ~40,000   | 8 (0-7) | 8         | ~40,000   
+| Test  | ~12,000   | 8 (0-7) | 8         | ~12,000   
 
 ### Class Distribution & Balance
 
 | Class ID | Number of People | Description | Train Samples | Test Samples | Total |
 |----------|-----------------|-------------|---------------|--------------|-------|
-| 0 | 0 people | Empty room | 1,000 | 200 | 1,200 |
-| 1 | 1 person | Single occupant | 1,000 | 200 | 1,200 |
-| 2 | 2 people | Two people | 1,000 | 200 | 1,200 |
-| 3 | 3 people | Three people | 1,000 | 200 | 1,200 |
-| 4 | 4 people | Four people | 1,000 | 200 | 1,200 |
-| 5 | 5 people | Five people | 1,000 | 200 | 1,200 |
-| 6 | 6 people | Six people | 1,000 | 200 | 1,200 |
-| 7 | 7 people | Seven people | 1,000 | 200 | 1,200 |
+| 0 | 0 people | Empty room | 6,100 | 1,525 |  7,625 |
+| 1 | 1 person | Single occupant | 6,015 | 1,503 | 7,519 |
+| 2 | 2 people | Two people | 6,020 | 1,505 | 7,525 |
+| 3 | 3 people | Three people | 5,780 | 1,445 | 7,225 |
+| 4 | 4 people | Four people | 6,100 | 1,525 | 7,625 |
+| 5 | 5 people | Five people | 6,000 | 1,500 | 7,500 |
+| 6 | 6 people | Six people | 6,100 | 1,525 | 7,625 |
+| 7 | 7 people | Seven people | 5,920 | 1,480 | 7,400 |
 
 ![3D Visualization](images/MultiPerson.png)
 
