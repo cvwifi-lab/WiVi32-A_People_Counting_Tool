@@ -203,11 +203,11 @@ CSI-Application/
 │   ├── services/         # API services
 │   └── ...              # Other frontend files
 ├── data/                  # Complete Dataset
-│   ├── train/            # Training data (8,000 samples)
+│   ├── train/            # Training data (~48,000 samples)
 │   │   ├── labels.csv    # Training labels
 │   │   ├── csi/          # CSI data files
 │   │   └── images/       # Camera frames
-│   └── test/             # Test data (1,600 samples)
+│   └── test/             # Test data (~12,000 samples)
 │       ├── groundtruth.csv
 │       ├── csi/
 │       └── images/
