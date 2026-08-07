@@ -189,31 +189,35 @@ The software architecture consists of multiple layers to support data collection
 After downloading from Google Drive, your folder structure should look like this:
 ```
 CSI-Application/
-├── images/ 
-├── utils/ 
-├── visualize/ 
-├── api/                    # Flask Backend
-│   ├── route.py           # Main Flask application
-│   └── ...               # Other backend files
-├── CSIApp/                # React Native Mobile App
-│   ├── package.json      # Node.js dependencies
-│   ├── App.tsx           # Main React Native app
-│   ├── index.ts          # Entry point
-│   ├── components/       # UI components
-│   ├── screens/          # App screens
-│   ├── services/         # API services
-│   └── ...              # Other frontend files
-├── data/                  # Complete Dataset
-│   ├── train/            # Training data (~48,000 samples)
-│   │   ├── labels.csv    # Training labels
-│   │   ├── csi/          # CSI data files
-│   │   └── images/       # Camera frames
-│   └── test/             # Test data (~12,000 samples)
-│       ├── groundtruth.csv
-│       ├── csi/
-│       └── images/
-└── README.md             # This documentation
-├── requirements.txt.     # Dependecies 
+├── images/
+├── utils/
+├── visualize/
+├── api/                         # Flask Backend
+│   ├── route.py                 # Main Flask application
+│   └── ...                      # Other backend files
+├── CSIApp/                      # React Native Mobile App
+│   ├── package.json             # Node.js dependencies
+│   ├── App.tsx                  # Main React Native app
+│   ├── index.ts                 # Entry point
+│   ├── components/              # UI components
+│   ├── screens/                 # App screens
+│   ├── services/                # API services
+│   └── ...                      # Other frontend files
+├── data/                        # Complete Dataset
+│   ├── train/                   # Training data (~42,030 samples)
+│   │   ├── labels.csv           # Training labels
+│   │   ├── csi/                 # CSI data files
+│   │   └── images/              # Camera frames
+│   ├── validation/              # Validation data (~6,014 samples)
+│   │   ├── labels.csv           # Validation labels
+│   │   ├── csi/                 # CSI data files
+│   │   └── images/              # Camera frames
+│   └── test/                    # Test data (~12,000 samples)
+│       ├── groundtruth.csv      # Test ground truth
+│       ├── csi/                 # CSI data files
+│       └── images/              # Camera frames
+├── README.md                    # This documentation
+└── requirements.txt            # Dependencies
 ```
 
 **2. Prerequisites Installation:**
