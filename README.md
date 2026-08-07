@@ -9,7 +9,7 @@ This repository presents a comprehensive Channel State Information (CSI) system 
 This repository includes a comprehensive WiFi CSI dataset for people counting research:
 
 **Dataset Overview:**
-- **60,044 total samples** (80% samples for training, 20% samples kept for final testing)
+- **60,044 total samples** (70% training, 10% validation, and 20% testing)
 - **8 occupancy levels** (0-7 people: from empty room to 7+ people)
 - **Synchronized CSI + Visual data** (WiFi signals + camera frames for ground truth)
 - **High-quality annotations** with precise people counting and timestamp synchronization
@@ -28,7 +28,7 @@ Access to the complete dataset and source code is restricted to academic and res
 1. Click the [Google Drive Repository](https://drive.google.com/drive/folders/1r8Mz5YsZYtUNp4Lj8esnkxYQln3T0zFl?usp=sharing) link
   - `api/` - Flask backend source code
   - `CSIApp/` - React Native mobile application 
-  - `data/` - Complete dataset (9,600 samples with CSI + visual data for people counting)
+  - `data/` - Complete dataset
 2. Click "Request Access" button in Google Drive
 3. In the message field, include:
    - Your research affiliation (university/institution)
@@ -123,21 +123,22 @@ The software architecture consists of multiple layers to support data collection
 
 | Split | Samples | Classes | CSI Files | Images 
 |-------|---------|---------|-----------|--------
-| Train | ~48,000   | 8 (0-7) | 8         | ~48,000   
+| Train | ~42,030   | 8 (0-7) | 8         | ~42,030   
+| Validation  | ~6,014   | 8 (0-7) | 8         | ~6,014   
 | Test  | ~12,000   | 8 (0-7) | 8         | ~12,000   
 
 ### Class Distribution & Balance
 
-| Class ID | Number of People | Description | Train Samples | Test Samples | Total |
-|----------|-----------------|-------------|---------------|--------------|-------|
-| 0 | 0 people | Empty room | 6,100 | 1,525 |  7,625 |
-| 1 | 1 person | Single occupant | 6,015 | 1,503 | 7,519 |
-| 2 | 2 people | Two people | 6,020 | 1,505 | 7,525 |
-| 3 | 3 people | Three people | 5,780 | 1,445 | 7,225 |
-| 4 | 4 people | Four people | 6,100 | 1,525 | 7,625 |
-| 5 | 5 people | Five people | 6,000 | 1,500 | 7,500 |
-| 6 | 6 people | Six people | 6,100 | 1,525 | 7,625 |
-| 7 | 7 people | Seven people | 5,920 | 1,480 | 7,400 |
+| Class ID | Number of People | Description | Train Samples (70%) | Validation Samples (10%) | Test Samples (20%) | Total |
+|:--------:|:----------------:|-------------|--------------------:|-------------------------:|-------------------:|------:|
+| 0 | 0 people | Empty room | 5,338 | 762 | 1,525 | 7,625 |
+| 1 | 1 person | Single occupant | 5,263 | 752 | 1,504 | 7,519 |
+| 2 | 2 people | Two people | 5,268 | 753 | 1,504 | 7,525 |
+| 3 | 3 people | Three people | 5,058 | 722 | 1,445 | 7,225 |
+| 4 | 4 people | Four people | 5,338 | 762 | 1,525 | 7,625 |
+| 5 | 5 people | Five people | 5,250 | 750 | 1,500 | 7,500 |
+| 6 | 6 people | Six people | 5,338 | 762 | 1,525 | 7,625 |
+| 7 | 7 people | Seven people | 5,180 | 740 | 1,480 | 7,400 |
 
 ![3D Visualization](images/multi-profench.png)
 
